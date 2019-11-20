@@ -29,17 +29,17 @@
 1.用数字+.`1.`表示有序列表
 
 ## 代码段
-- 用三个反引号(`)表示代码段
+> 用三个反引号(`)表示代码段
 ```
 console.log(123);
 ```
 
-//引用  > 
+> 引用 
 //**粗体**//*斜体*
 
 ## 图片和链接
-/*![alt替代文本](https://himg2.huanqiucdn.cn/attachment2010/2019/1120/20191120094015997.jpg)
-<img src="" alt="替代文本">
-<hr>*/
+![alt替代文本](https://himg2.huanqiucdn.cn/attachment2010/2019/1120/20191120094015997.jpg)
+<img src="https://himg2.huanqiucdn.cn/attachment2010/2019/1120/20191120094015997.jpg" alt="替代文本">
+<hr>
 ![alt替代文本](https://himg2.huanqiucdn.cn/attachment2010/2019/1120/20191120094015997.jpg)
 [链接](https://www.gdaib.edu.cn)
