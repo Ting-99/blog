@@ -1,69 +1,45 @@
-# git 笔记： http://note.youdao.com/noteshare?id=82594d8e6b22d52e8d3b29dc64b613e0
+# markdown语法
 
-# 第一个仓库
-1. `git init` 用于初始化仓库
+## 标题标记
+-用`#`表示标题标记，1个`#`表示最大在标题（h1）
+-用`##`表示标题标记，2个`##`表示最大在标题（h2）
+-用`###`表示标题标记，3个`#`表示最大在标题（h3）
+-用`####`表示标题标记，4个`#`表示最大在标题（h4）
+-用`#####`表示标题标记，5个`#`表示最大在标题（h5）
+-用`######`表示标题标记，6个`#`表示最大在标题（h6）
 
-2. 新建一个readme.md文件
 
-3. `git add 文件名` 添加文件到本地仓库
-```
-git add .   //添加所有文件
-```
+## 列表
+### 无序列表
+- 用`-`表示无序列表
+- 用`-`表示无序列表
+- 用`-`表示无序列表
+* 用`*`表示无序列表
+* 用`*`表示无序列表
+* 用`*`表示无序列表
++ 用`+`表示无序列表
++ 用`+`表示无序列表
++ 用`+`表示无序列表
 
-4. 添加用户名和邮箱(第一次的时候需要)
-```
-git config --global user.email '你的邮箱'
-git config --global user.name '你的用户名'
-```
+### 有序列表
+1.用数字+.`1.`表示有序列表
+1.用数字+.`1.`表示有序列表
+1.用数字+.`1.`表示有序列表
+1.用数字+.`1.`表示有序列表
+1.用数字+.`1.`表示有序列表
 
-4. 提交
+## 代码段
+- 用三个反引号(`)表示代码段
 ```
-git commit -m '注释' //注释是对本次提交的说明
-```
-
-5. 添加远程仓库地址
-```
-git remote add origin git@github.com:lizelong/ceshi.git
-```
-6. 将本地提交的内容推送到远程仓库
-```
-git push 远程仓库的别名 master
-git push abc master
-```
-
-6. 没有权限，先生成ssh key
-```
-ssh-keygen -t rsa -C '邮箱'
-
-执行完上一条命令后，会在 ~/.ssh/ 文件夹下面生成公钥文件 id_rsa.pub 
-将公钥文件中的内容，放到GitHub中：
-	右上角头像 -> settings -> SSH and GPG keys -> New SSH key
-	title： 仓库名
-	Key： id_rsa.pub 的内容
+console.log(123);
 ```
 
+//引用  > 
+//**粗体**//*斜体*
 
-
-
-# 工作流程
-1. 初始化本地仓库
-2. 跟远程仓库建立连接
-	git remote add 远程仓库的别名(origin) 远程地址
-	git remote add origin git@github.com:lizelong/ceshi.git
-3. 开发模块
-4. 先添加所有文件
-	git add .
-5. 提交到本地仓库
-	git commit -m '添加index.html'
-
-git pull //拉取并合并
-
-# github pages
-目的： 为了更方便的查看HTML文件解析后的内容
-
-
-
-
-
-# bootstrap 前端框架
-## 官网 bootcss.com
+## 图片和链接
+/*![alt替代文本](https://himg2.huanqiucdn.cn/attachment2010/2019/1120/20191120094015997.jpg)
+<img src="" alt="替代文本">
+<hr>*/
+![alt替代文本](https://himg2.huanqiucdn.cn/attachment2010/2019/1120/20191120094015997.jpg)
+[链接](https://www.gdaib.edu.cn)
